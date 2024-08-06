@@ -137,7 +137,7 @@ def main():
         sys.exit(1)
 
     bot = TeleBot(token=TELEGRAM_TOKEN)
-    timestamp = int(time.time())
+    timestamp = int(time.time() - RETRY_PERIOD)
     last_error = None
 
     while True:
