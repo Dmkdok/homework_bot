@@ -14,3 +14,9 @@ class WorkStatusError(Exception):
     """Исключение для ошибок при получении неизвестного статуса работы."""
 
     pass
+
+
+class TelegramError(Exception):
+    """Исключение для ошибок при отправке сообщения в Telegram."""
+
+    pass
